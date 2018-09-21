@@ -1,0 +1,95 @@
+body {
+  background-color: white;
+}
+
+.logo-first {
+  margin-left: 50px;
+  padding-bottom: 20px;
+}
+
+.messageOne {
+  color: black;
+}
+
+.leftWelcome {
+  background: url("../../assets/images/leftShero.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.buttonFacebook {
+  background-color: #3b5998;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.fbLogo {
+  height: 5%;
+  width: 10%;
+  margin-bottom: 7px;
+}
+
+.buttonGoogle {
+  color: black;
+}
+
+.gLogo {
+  height: 4%;
+  width: 7%;
+  margin-bottom: 7px;
+  margin-right: 4%;
+}
+
+p {
+  margin-left: 25%;
+  font-size: 100%;
+}
+
+.wrap-messages {
+  margin-left: 150px;
+  margin-top: 300px;
+}
+
+.one {
+  padding: 5%;
+}
+
+.two {
+  padding: 5%;
+}
+
+.tree {
+  padding: 5%;
+}
+
+.buttonSignIn {
+  background-color: #f081a8;
+  font-size: 1em;
+  border-radius: 15px;
+  color: white;
+  transition-duration: .4s;
+  margin-bottom: 15px;
+}
+
+.buttonLogin {
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  border-color: #f081a8;
+  border-radius: 15px;
+}
+
+.signUp {
+  margin-top: 5%;
+
+}
+
+#logoNatbar {
+  height: 5%;
+  width: 10%;
+}
