@@ -49,17 +49,17 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Correo electrónico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+              <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="email" name="email" aria-describedby="emailHelp" placeholder="Correo electrónico">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" name="password" placeholder="Contraseña">
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-outline-info">Registrar</button>
+          <button type="button" class="btn btn-outline-info" (click)="onSubmitAddUser()">Registrar</button>
         </div>
       </div>
     </div>
@@ -79,18 +79,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Correo electrónico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+              <label for="exampleInputEmail2">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Correo electrónico">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              <label for="exampleInputPassword2">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña">
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-outline-info">Iniciar Sesión</button>
+          <button type="submit" class="btn btn-outline-info" (click)="onSubmitOldUser()">Iniciar Sesión</button>
         </div>
       </div>
     </div>
