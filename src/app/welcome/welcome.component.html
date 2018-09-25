@@ -21,6 +21,7 @@
       <div class="logo-first">
         <img src="../../assets/images/logo.png" class="img-fluid" alt="Responsive image">
       </div>
+      <!-- Sign In & Sign Up zone -->
       <p class="messageOne col-sm-12 col-6 font-weight-bold">Únete hoy a la primera Red Social feminista</p>
       <div class="row">
         <button class="btn mx-auto col-sm-3 col-md-8 col-xl-6 font-weight-bold buttonSignIn" style="width: 200px;"
@@ -28,13 +29,19 @@
       </div>
       <div class="row">
         <button class="btn mx-auto col-sm-3 col-md-8 col-xl-6 font-weight-bold buttonLogin" style="width: 200px;"
-          data-toggle="modal" data-target="#exampleModalCenter2">Iniciar
-          Sesión</button>
+          data-toggle="modal" data-target="#exampleModalCenter2">Iniciar Sesión</button>
+      </div>
+      <!-- Social buttons -->
+      <div>
+        <p class="messageOne col-sm-12 col-6 mt-3 mb-4">También puedes acceder con tus cuentas:</p>
+        <button type="button" class="btn buttonFacebook btn-lg" (click)="clickFacebook()"><i class="fab fa-facebook-square"></i></button>
+        <button type="button" class="btn buttonGoogle btn-lg" (click)="clickGoogle()">
+          <i class="fab fa-google"></i></button>
       </div>
     </section>
   </section>
 
-  <!-- Modal Registro -->
+  <!-- Sign Up Modal -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -49,11 +56,13 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Correo electrónico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="email" name="email" aria-describedby="emailHelp" placeholder="Correo electrónico">
+              <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="email" name="email"
+                aria-describedby="emailHelp" placeholder="Correo electrónico">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" name="password" placeholder="Contraseña">
+              <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" name="password"
+                placeholder="Contraseña">
             </div>
           </form>
         </div>
@@ -65,7 +74,7 @@
     </div>
   </div>
 
-  <!-- Modal Sign In -->
+  <!-- Sign In Modal -->
   <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -90,7 +99,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-outline-info" (click)="onSubmitOldUser()">Iniciar Sesión</button>
+          <button type="button" class="btn btn-outline-info" (click)="onSubmitOldUser()">Iniciar Sesión</button>
         </div>
       </div>
     </div>

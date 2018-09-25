@@ -8,28 +8,46 @@ import { Router } from '@angular/router';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-  public email:string;
-  public password:string;
-  constructor(public authService:AuthService, public router: Router) { }
+  public email: string;
+  public password: string;
+  constructor(public authService: AuthService, public router: Router) { }
 
   ngOnInit() {
   }
 
-  onSubmitAddUser(){
+  onSubmitAddUser() {
+    console.log('Boton funcionando');
     this.authService.registerUser(this.email, this.password)
+      .then((res) => {
+        this.router.navigate(['/wall']);
+      }).catch((err) => {
+        console.log(err);
+      })
+  }
+
+  onSubmitOldUser() {
+    console.log('Boton funcionando');
+    this.authService.logIn(this.email, this.password)
+      .then((res) => {
+        this.router.navigate(['/wall']);
+      }).catch((err) => {
+        console.log(err);
+      })
+  }
+
+  clickGoogle() {
+    this.authService.loginGoogle()
     .then((res) => {
-      console.log(res);      
-      this.router.navigate(['wall']);  
+      this.router.navigate(['/wall']);
     }).catch((err) => {
       console.log(err);      
     })
   }
 
-  onSubmitOldUser(){
-    this.authService.logIn(this.email, this.password)
+  clickFacebook() {
+    this.authService.loginFacebook()
     .then((res) => {
-      console.log(res);      
-      this.router.navigate(['wall']);  
+      this.router.navigate(['/wall']);
     }).catch((err) => {
       console.log(err);      
     })
