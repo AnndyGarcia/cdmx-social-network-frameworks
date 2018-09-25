@@ -23,6 +23,13 @@ export class AuthService {
     });
   }
 
+  loginGoogle(){
+    return this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  }
+  loginFacebook(){
+    return this.afAuth.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
+  }
+
   logOut(){
     return this.afAuth.auth.signOut();
   }
