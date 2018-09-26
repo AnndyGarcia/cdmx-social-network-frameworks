@@ -1,4 +1,6 @@
-<app-header></app-header>
-<div class="container">
-  <h2>MURO FUNCIONANDO!</h2>
+<div *ngIf="isLogin">
+  <app-header></app-header>
+  <div class="container">
+    <h2>MURO FUNCIONANDO!</h2>
+  </div>
 </div>

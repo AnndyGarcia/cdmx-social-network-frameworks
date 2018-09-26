@@ -26,7 +26,7 @@ export class WelcomeComponent implements OnInit {
   }
 
   onSubmitOldUser() {
-    console.log('Boton funcionando');
+    console.log('Boton funcionando');   
     this.authService.logIn(this.email, this.password)
       .then((res) => {
         this.router.navigate(['/wall']);

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import * as firebase from 'firebase/app';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class AuthService {
@@ -28,6 +29,10 @@ export class AuthService {
   }
   loginFacebook(){
     return this.afAuth.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
+  }
+
+  getAuth(){
+    return this.afAuth.authState.pipe(map(data => data));
   }
 
   logOut(){
