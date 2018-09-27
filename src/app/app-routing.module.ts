@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes, Router } from '@angular/router';
-import { WallComponent } from './wall/wall.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ProfileComponent } from './profile/profile.component';
+import { WallComponent } from './components/wall/wall.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   {path: '',  component: WelcomeComponent},

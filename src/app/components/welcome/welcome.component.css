@@ -12,7 +12,7 @@ body {
 }
 
 .leftWelcome {
-  background: url("../../assets/images/leftShero.png") no-repeat;
+  background: url("../../../assets/images/leftShero.png") no-repeat;
   background-position: center center;
   background-size: cover;
   height: 800px;
@@ -51,14 +51,6 @@ p {
   padding: 5%;
 }
 
-.two {
-  padding: 5%;
-}
-
-.tree {
-  padding: 5%;
-}
-
 .buttonSignIn {
   background-color: #f081a8;
   font-size: 1em;
@@ -76,15 +68,6 @@ p {
   border-radius: 15px;
 }
 
-.signUp {
-  margin-top: 5%;
-
-}
-
-#logoNatbar {
-  height: 5%;
-  width: 10%;
-}
 @media(max-width:570px) {
   .logo-first {
     margin-top: 250px;
@@ -96,7 +79,6 @@ p {
     width: 100wh;
     height: 90vh;
     color: #000;
-    background: url("../../assets/images/leftShero.png") no-repeat;
     /* background: linear-gradient(-45deg, #2e2f53, #2e2f53, #f081a8, #f1ede4);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;

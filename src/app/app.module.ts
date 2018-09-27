@@ -9,10 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 // import * as firebase from 'firebase/app';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { WallComponent } from './wall/wall.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ProfileComponent } from './profile/profile.component';
+import { HeaderComponent } from './components/header/header.component';
+import { WallComponent } from './components/wall/wall.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [

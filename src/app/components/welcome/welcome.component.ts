@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,41 +16,39 @@ export class WelcomeComponent implements OnInit {
   }
 
   onSubmitAddUser() {
-    console.log('Boton funcionando');
     this.authService.registerUser(this.email, this.password)
       .then((res) => {
         this.router.navigate(['/wall']);
       }).catch((err) => {
-        console.log(err);
+        alert(err);
       })
   }
 
   onSubmitOldUser() {
-    console.log('Boton funcionando');   
     this.authService.logIn(this.email, this.password)
       .then((res) => {
         this.router.navigate(['/wall']);
       }).catch((err) => {
-        console.log(err);
+        alert(err);
       })
   }
 
   clickGoogle() {
     this.authService.loginGoogle()
-    .then((res) => {
-      this.router.navigate(['/wall']);
-    }).catch((err) => {
-      console.log(err);      
-    })
+      .then((res) => {
+        this.router.navigate(['/wall']);
+      }).catch((err) => {
+        alert(err);
+      })
   }
 
   clickFacebook() {
     this.authService.loginFacebook()
-    .then((res) => {
-      this.router.navigate(['/wall']);
-    }).catch((err) => {
-      console.log(err);      
-    })
+      .then((res) => {
+        this.router.navigate(['/wall']);
+      }).catch((err) => {
+        console.log(err);
+      })
   }
 
 }
