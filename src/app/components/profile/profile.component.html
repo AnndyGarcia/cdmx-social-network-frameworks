@@ -1,6 +1,10 @@
 <app-header></app-header>
-<div class="container mt-5" *ngIf="isLogin">
-  <h2>
-    PERFIL FUNCIONANDO!
-  </h2>
+<div class="container mt-3" *ngIf="isLogin">
+  <div class="card" style="width: 15rem;">
+    <img class="card-img-top" src="{{userPhoto}}" alt="Card image cap">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{nameUser}}</h5>
+    <p class="card-text">Correo: {{userEmail}}.</p>
+  </div>
 </div>
