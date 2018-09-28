@@ -1,4 +1,4 @@
-# Rehaciendo tu red social usando librerías y frameworks
+# Rehaciendo Shero
 
 ## Preámbulo
 
@@ -26,158 +26,60 @@ los que trabajes.
 
 ## Introducción
 
-En este proyecto tendrás la oportunidad de _re-escribir_ tu anterior proyecto de
-la _Red Social_, pero esta vez usando un _framework_ o una _librería_.
+En este proyecto, he decidido rehacer [_Shero_](https://github.com/AnndyGrs/cdmx-2018-06-bc-core-am-social-network) usando el framework [_Angular_](https://angular.io/),  ya que para mí aprender un framework tan completo y complejo significa un reto que quiero superar,  para así poder aprender a usar muchas más nuevas tecnologías relacionadas o basadas en el mismo.
 
-Creemos que la mejor manera de enfrentarte a estas herramientas es
-eliminando de la ecuación el hecho de que tengas que entender un proyecto desde
-cero, su alcance, sus particularidades, el flujo, las validaciones, etc.
-Concéntrate en aprender y utilizar estas nuevas tecnologías.
+Para mí, rehacer _Shero_ usando Angular ha sido una experiencia única, ya que aprender a usarlo siguiendo todas las convenciones ha sido un reto: tener que aprender a hacer (y usar correctamente) los componentes, definir las rutas de redirección, crear aplicaciones web de una sola página (evitando el DRY),  ver lo tan conectado que está con _NodeJS_ y _npm_, etc. Sin embargo, pienso que,  a pesar de todos los retos y dificultades, he tenido un gran aprendizaje, y definitivamente _Angular_ me está gustando bastante.
 
-El alcance del proyecto y el detalle de sus características es exactamente
-[el mismo que el original](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network),
-incluyendo la parte de Hacker Edition pero excluyendo la parte de UX.
+## Lineamientos de Diseño
 
-## Objetivos
+_Shero_ está pensado como una plataforma web, intuitiva y de diseño sencillo para que el usuario pueda usarla sin complicaciones.
 
-El objetivo principal de aprendizaje es familiarizarse con el desarrollo web
-usando el _framework_ o _librería_ elegido, y todo lo que ello conlleva:
-**documentación**, **arquitectura**, **principios de diseño**, **paradigma**,
-**abstracciones**, **vocabulario**, **herramientas**, **comunidad**, ...
+Los primeros sketches de _Shero_ fueron los siguientes:
 
-Por otro lado, tener que _re-escribir_ un programa es una experiencia de
-aprendizaje muy valiosa en sí misma, llevándonos a re-evaluar e iterar sobre
-un producto o prototipo. Dada la velocidad a la que evoluciona la tecnología
-web, es muy común tener que enfrentarse a este tipo de escenario donde decidimos
-(o alguien decide por nosotros) que lo mejor para seguir evolucionando una
-aplicación es re-escribirla usando una nueva tecnología.
+### Diseño Web
 
-## Consideraciones generales
 
-Este proyecto se debe "resolver" en duplas.
+![inicio-registro](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Inicio-Registro.jpg)
 
-Discutan y pónganse de acuerdo sobre cuál de los proyectos van a hacer desde cero.
-Si no se pueden poner de acuerdo en 10 minutos, [aquí hay algo que puede ayudar](https://justflipacoin.com/)
+![acerca-nosotras](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Acerca-de-nosotras.jpg)
 
-Investiguen un poco sobre estas tres herramientas propuestas (React, Angular y
-Vue) y elijan con cuál quieren trabajar.
+![registro-adicional](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Registro-adicional.jpg)
 
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este repositorio.
+![muro](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Muro.jpg)
 
-## Parte obligatoria
+![sidebar](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Sidebar.jpg)
 
-Ver [03-social-network](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network#parte-obligatoria).
 
-## Hacker edition
+### Mobile
 
-Ver [03-social-network](https://github.com/Laboratoria/curricula-js/tree/v2.x/projects/03-social-network#hacker-edition).
 
-## Entrega
+![inicio](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-mobile/Inicio.jpg)
 
-El proyecto será _entregado_ subiendo tu código a GitHub (`commit`/`push`) y la
-interfaz será desplegada usando GitHub pages u otro servicio de hosting que
-puedas haber encontrado en el camino.
+![inicio-sesion](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-mobile/Inicio-sesion.jpg)
 
-## Evaluación
+![inicio-registro](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-mobile/Registro.jpg)
 
-### Tech
+![registro-adicional](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-mobile/Registro-adicional.jpg)
 
-| Habilidad | Nivel esperado |
-|-----------|----------------|
-| **JavaScript** | |
-| Estilo | 3
-| Nomenclatura/semántica | 3
-| Funciones/modularidad | 2
-| Estructuras de datos | 2
-| Tests | 2
-| **HTML** | |
-| Validación | 3
-| Estilo | 3
-| Semántica | 3
-| SEO | n/a
-| **CSS** | |
-| DRY | 3
-| Responsive | 3
-| **SCM** | |
-| Git | 3
-| GitHub | 3
-| **CS** | |
-| Lógica | 2
-| Arquitectura | 2
-| Patrones/paradigmas | n/a
+![muro](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-mobile/Muro.jpg)
 
-### Habilidades Blandas
+![sidebar](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-mobile/Sidebar.jpg)
 
-Para este proyecto esperamos que ya hayas consolidado el nivel 4 en todas tus
-habilidades blandas pero te invitamos que las lleves al siguiente nivel
-alcanzando el nivel 5 en todasvellas. Particularmente, entrena tu habilidad de
-autoaprendizaje, planificación y organización, y dar y recibir feedback.
 
-Recuerda la importancia de organizar, dividir y planificar tu trabajo.
-Particularmente lo que se refiere a probar/experimentar lo nuevo de manera
-aislada y no necesariamente en el mismo código que ya tienes implementado.
-Muchas cosas pueden interferir en lo que estás intentando hacer y puede parecer
-que no está bien lo que intentas cuando no es así. Revisa las diapos 15 y 16 de
-la [guia general para organizar, dividir y planificar tu ttrabajo](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
+El diseño final de _Shero_ fue el siguiente:
+  
 
-Te aconsejamos revisar la rúbrica:
+![Inicio](https://github.com/LexHernandez/cdmx-2018-06-bc-core-am-social-network/blob/master/ux/images/sketch-desktop/Sketch-desktop%20(1).png)
 
-| Habilidad | Nivel esperado |
-|-----------|----------------|
-| Planificación y organización | 4
-| Autoaprendizaje | 4
-| Solución de Problemas | 4
-| Dar y recibir feedback | 4
-| Adaptabilidad | 4
-| Trabajo en equipo (trabajo colaborativo y responsabilidad) | 4
-| Comunicación eficaz | 4
-| Presentaciones | 4
+![Inicio-registro](https://github.com/LexHernandez/cdmx-2018-06-bc-core-am-social-network/blob/master/ux/images/sketch-desktop/Sketch-desktop%20(3).png)
 
-***
+![Inicio-sesion](https://github.com/LexHernandez/cdmx-2018-06-bc-core-am-social-network/blob/master/ux/images/sketch-desktop/Sketch-desktop%20(2).png)
 
-## Pistas / Tips / Lecturas complementarias
+Sin embargo, en esta oportunidad de rehacer el proyecto, posiblemente haya más cambios visuales, que se estarán documentando.
 
-Antes de elegir un framework, te recomendamos leer los siguientes artículos:
+## Instalación
 
-* [The deepest reason why modern JavaScript frameworks exist](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445)
-* [Should I use frameworks or libraries such as Angular, React, or VueJS or not?](https://dev.to/ericpaulbasbas/should-i-use-frameworks-or-libraries-such-as-angular-react-or-vuejs-or-not-3dp)
-
-Hemos preparado algunos videos introductorios:
-
-* [Introducción a Frameworks de JavaScript (Lupo)](https://laboratoria-1.wistia.com/medias/22j8ut23y5)
-* [Introducción a Angular (Fabián)](https://laboratoria-1.wistia.com/medias/2dxpgs2s59)
-* [Introducción a React (Elizabeth)](https://reactjs.org/)
-* [Introducción a Vue (Luis)](https://vuejs.org/)
-
-No dejes de explorar la documentación oficial de cada herramienta:
-
-### React
-
-* [React - docs oficiales](https://reactjs.org/)
-* [React - tutorial](https://egghead.io/courses/the-beginner-s-guide-to-react)
-* [Redux - tutorial](https://egghead.io/courses/getting-started-with-redux)
-* [create-react-app](https://github.com/facebook/create-react-app)
-* [React js en español - tutorial básico, primeros pasos y ejemplos - frontendlabs.io](https://frontendlabs.io/3158--react-js-espanol-tutorial-basico-primeros-pasos-ejemplos)
-
-### Angular
-
-* [Angular - docs oficiales](https://angular.io/)
-* [Angular CLI](https://cli.angular.io/)
-* [Angular - tutorial](https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ)
-* [Angular - crud](https://www.youtube.com/watch?v=6wVolJfXn1c)
-* [Angular - redux](https://www.youtube.com/playlist?list=PLCKuOXG0bPi3FtoplJe0JOpiV6OyK30wd)
-
-### Vue
-
-* [Vue - docs oficiales](https://vuejs.org/)
-* [Vue CLI](https://cli.vuejs.org/)
-* [Vue- adicional](https://scotch.io/search?q=vue)
-* [Vue- school](https://vueschool.io/)
-
-Independientemente de si eliges React, Vue o Angular, todos estas herramientes
-se usan muchas veces en conjunción con Redux como manejador de _estado_.
-
-* [Redux - docs oficiales](https://redux.js.org/)
+## Despliegue de la aplicación
 
 ## Checklist
 
