@@ -38,7 +38,7 @@ export class WelcomeComponent implements OnInit {
       .then((res) => {
         this.router.navigate(['/wall']);
       }).catch((err) => {
-        alert(err);
+        alert(err.message);
       })
   }
 
@@ -47,7 +47,7 @@ export class WelcomeComponent implements OnInit {
       .then((res) => {
         this.router.navigate(['/wall']);
       }).catch((err) => {
-        console.log(err);
+        console.log(err.message);
       })
   }
 
