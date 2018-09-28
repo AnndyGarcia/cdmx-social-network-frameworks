@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
           this.nameUser = auth.displayName;
         }
         if (!auth.photoURL) {
-          this.userPhoto = '../../assets/images/default-user.png';
+          this.userPhoto = 'https://raw.githubusercontent.com/AnndyGrs/cdmx-social-network-frameworks/master/src/assets/images/default-user.png';
         } else {
           this.userPhoto = auth.photoURL;
         }
