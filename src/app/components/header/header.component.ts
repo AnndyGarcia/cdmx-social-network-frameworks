@@ -19,9 +19,15 @@ export class HeaderComponent implements OnInit {
     this.authService.getAuth().subscribe(auth => {
       if (auth) {
         this.isLogin = true;
-        this.nameUser = auth.displayName;
+        if (!auth.displayName) {
+          this.nameUser = 'Usuario';
+        } else {
+          this.nameUser = auth.displayName;
+        }
+        if (!this.userPhoto) {
+          this.userPhoto = '../../../assets/images/default-user.png';
+        }
         this.userEmail = auth.email;
-        this.userPhoto = auth.photoURL;        
       } else {
         this.isLogin = false;
       }
