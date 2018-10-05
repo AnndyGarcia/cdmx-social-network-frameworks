@@ -37,6 +37,7 @@ export class WelcomeComponent implements OnInit {
     this.authService.loginGoogle()
       .then((res) => {
         this.router.navigate(['/wall']);
+        // window.location.reload();
       }).catch((err) => {
         alert(err.message);
       })
@@ -46,6 +47,7 @@ export class WelcomeComponent implements OnInit {
     this.authService.loginFacebook()
       .then((res) => {
         this.router.navigate(['/wall']);
+        // window.location.reload();
       }).catch((err) => {
         console.log(err.message);
       })
