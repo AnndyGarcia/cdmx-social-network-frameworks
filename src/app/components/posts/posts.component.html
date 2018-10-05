@@ -21,12 +21,14 @@
         </button>
       </div>
       <div class="modal-body">
-        <input class="form-control" type="text" placeholder="¿Qué estás pensando?" name="content" [(ngModel)]="post.content"
-          id="comment">
+        <form #formNew="ngForm">
+          <input class="form-control" type="text" placeholder="¿Qué estás pensando?" name="content" [(ngModel)]="post.content"
+            id="comment">
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-outline-info" (click)="clickEdit()">Guardar cambios</button>
+        <button type="button" class="btn btn-outline-info" (click)="clickEdit(formNew)">Guardar cambios</button>
       </div>
     </div>
   </div>
