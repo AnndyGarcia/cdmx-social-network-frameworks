@@ -3,6 +3,11 @@ img.rounded-circle {
   width: 35px;
 }
 
-.navbar {
-  padding: .5rem 4rem;
+.buttonSignIn {
+  background-color: #f081a8;
+  font-size: 1em;
+  border-radius: 15px;
+  color: white;
+  transition-duration: .4s;
+  margin-bottom: 15px;
 }
