@@ -29,7 +29,6 @@ export class FormComponent implements OnInit {
       value.userName = user.displayName;
       value.userPic = user.photoURL;
       this.connectionService.addNewPost(value);
-    })
-    document.getElementById("comment").value = '';    
+    })    
   }
 }
