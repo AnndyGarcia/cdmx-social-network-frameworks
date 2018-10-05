@@ -1,0 +1,16 @@
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 0%;
+  border: 0ch;
+  color: #620B53;
+}
+
+img.rounded-circle {
+  height: 25px;
+  width: 25px;
+}
+
+.date {
+  color: #8F8F8F;
+}

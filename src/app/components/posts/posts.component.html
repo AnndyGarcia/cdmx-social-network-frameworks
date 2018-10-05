@@ -1,0 +1,33 @@
+<div class="card mb-3" *ngFor="let post of posts">
+  <div class="card-header">
+    <img src="{{post.userPic}}" class="rounded-circle"> {{post.userName}}
+    <div class="float-right" data-toggle="modal" data-target="#exampleModalCenter" *ngIf="idLogUser === post.userID"><i
+        class="fas fa-pencil-alt"></i></div>
+    <div class="float-right mr-3" (click)="clickDelete(post)" *ngIf="idLogUser === post.userID"><i class="far fa-trash-alt"></i></div>
+    <span class="date float-right mr-3">{{post.datePost | date: 'dd-MMM'}}</span>
+  </div>
+  <div class="alert alert-danger" role="alert">{{post.content}}</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Editar publicación</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input class="form-control" type="text" placeholder="¿Qué estás pensando?" name="content" [(ngModel)]="post.content"
+          id="comment">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-outline-info" (click)="clickEdit(post)">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
