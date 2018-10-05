@@ -1,0 +1,4 @@
+<form #saveForm="ngForm" (ngSubmit)="addPost(saveForm)">
+  <input class="form-control" type="text" placeholder="¿Qué estás pensando?" name="content" [(ngModel)]="post.content" id="comment">
+  <button class="btn buttonLogin mt-3" type="submit">Publicar</button>
+</form>
