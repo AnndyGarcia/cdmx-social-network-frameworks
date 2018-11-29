@@ -39,30 +39,26 @@ Los primeros sketches de _Shero_ fueron los siguientes:
 ### Diseño Web
 
 
-![inicio-registro](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Inicio-Registro.jpg)
+![inicio-registro](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-desktop/Inicio-Registro.jpg)
 
-![acerca-nosotras](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Acerca-de-nosotras.jpg)
+![acerca-nosotras](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-desktop/Acerca-de-nosotras.jpg)
 
-![registro-adicional](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Registro-adicional.jpg)
+![registro-adicional](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-desktop/Registro-adicional.jpg)
 
-![muro](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Muro.jpg)
+![muro](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-desktop/Muro.jpg)
 
-![sidebar](https://anndygrs.github.io/cdmx-2018-06-bc-core-am-social-network/ux/images/sketch-desktop/Sidebar.jpg)
+![sidebar](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-desktop/Sidebar.jpg)
 
 
 ### Mobile
 
 
 ![inicio](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-mobile/Inicio.jpg)
-
 ![inicio-sesion](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-mobile/Inicio-sesion.jpg)
-
 ![inicio-registro](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-mobile/Registro.jpg)
 
 ![registro-adicional](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-mobile/Registro-adicional.jpg)
-
 ![muro](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-mobile/Muro.jpg)
-
 ![sidebar](https://raw.githubusercontent.com/AnndyGarcia/cdmx-2018-06-bc-core-am-social-network/master/ux/images/sketch-mobile/Sidebar.jpg)
 
 
